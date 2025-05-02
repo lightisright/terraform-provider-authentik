@@ -13,7 +13,8 @@ test:
 	go tool cover -html coverage.txt -o coverage.html
 
 build:
-	go build -o /dev/null -v ./...
+	#go build -o /dev/null -v ./...
+	go build -o ${PWD}/out -pkgdir ${PWD}/dist -v ./...
 
 gen:
 	golangci-lint run -v
