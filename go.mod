@@ -1,4 +1,4 @@
-module goauthentik.io/terraform-provider-authentik
+module local/terraform-provider-authentik
 
 go 1.23.0
 
